@@ -1,0 +1,362 @@
+* {
+    font-family: fantasy;
+
+}
+
+body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "nav axl"
+        "nav skills"
+        "nav hobbies"
+        "nav cont";
+}
+
+.navigation {
+    grid-area: nav;
+    background-color: #52ab49;
+    padding: 6rem;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+
+}
+
+.navigation ul {
+    margin-left: -90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+
+    gap: 2rem;
+
+}
+
+.navigation ul li a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+.navigation ul li a:hover {
+    color: rgb(255, 255, 255);
+    border-right: double 10px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.navigation img {
+    width: 250px;
+    height: 250px;
+    border: 15px;
+    border-radius: 250px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.568);
+
+
+}
+
+
+.Axel {
+    grid-area: axl;
+    width: 1175px;
+    height: 915px;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Axel h1 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 7rem;
+    color: #343a40;
+    letter-spacing: 5px;
+}
+
+.Axel span {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #52ab49;
+}
+
+.Axel a {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-align: left;
+    margin-left: -328px;
+    margin-top: -125px;
+    color: #343a40;
+}
+
+#cv{
+    display: block;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-align: left;
+    margin-top: -65px;
+    margin-left: 100px;
+    color: #52ab49;
+}
+#cv:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: black;
+    cursor: pointer;
+}
+
+.Axel a:hover {
+    /*font-size: 3rem;*/
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #52ab49;
+    cursor: pointer;
+
+}
+
+
+.skills {
+    grid-area: skills;
+    width: 1175px;
+    height: 915px;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #52ab49;
+    margin-top: 30px;
+}
+
+.skills p {
+
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: 500px;
+    margin-top: -25px;
+
+
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 310px;
+
+}
+
+.skills-list li {
+    padding: 10px;
+    margin: 5px;
+    font-size: 5rem;
+
+}
+
+ul li figure {
+    position: relative;
+    padding: 5px;
+}
+
+ul li figcaption p {
+    display: none;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    top: 130px;
+    left: -30px;
+    bottom: 150px;
+    right: 850px;
+    font-size: 15px;
+    width: 100px;
+    height: 130px;
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+
+}
+
+ul li figure:hover ul li figcaption p {
+    display: block;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    top: 130px;
+    left: -30px;
+    bottom: 150px;
+    right: 850px;
+    font-size: 15px;
+    width: 100px;
+    height: 130px;
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+
+}
+
+#html:hover {
+    cursor: pointer;
+    color: orangered;
+
+}
+
+
+#javascript:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+#php:hover {
+    cursor: pointer;
+    color: violet;
+}
+
+#css:hover {
+    cursor: pointer;
+    color: rgb(0, 157, 255);
+}
+
+#java:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+#youtube:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+.works {
+    grid-area: hobbies;
+    width: 1175px;
+    height: 915px;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #52ab49;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.works p {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: 500px;
+    margin-top: -25px;
+}
+
+#file {
+    font-size: 5rem;
+    color: #52ab49;
+    margin-top: 50px;
+}
+
+#file:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.cont {
+    grid-area: cont;
+    width: 1175px;
+    height: 915px;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont h1 {
+    font-size: 4rem;
+    letter-spacing: .5px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #52ab49;
+    margin-top: 30px;
+    margin-left: 85px;
+    text-align: center;
+
+}
+
+.cont p {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: 500px;
+    margin-top: -25px;
+}
+
+.cont-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 120px;
+    
+}
+
+.cont-list a{
+    text-decoration: none;
+    color: black;
+}
+.cont-list li{
+    padding: 10px;
+    margin: 30px;
+    font-size: 5rem; 
+
+}
+#messenger:hover{
+    cursor:pointer;
+    color: rgb(0, 119, 255);
+}
+
+#whatsap:hover{
+    color: #407f39;
+    cursor: pointer;
+}
+
+#telegram:hover{
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+}
+
+#ig:hover{
+    cursor: pointer;
+    color: #c0328e;
+}
+
+#gmail:hover{
+    cursor: pointer;
+    color: red;
+}
